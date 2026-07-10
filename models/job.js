@@ -7,7 +7,7 @@ export class JobModel {
 
         if(text) {
             const searchTerm = text.toLowerCase()
-            filteredJobs = filteredJobs.filter(jobs =>
+            filteredJobs = filteredJobs.filter(job =>
                 job.titulo.toLowerCase().includes(searchTerm) || job.descripcion.toLowerCase().includes(searchTerm)
             )
         }
@@ -20,10 +20,11 @@ export class JobModel {
 
         const limitNumber = Number(limit)
         const offsetNumber = Number(offset)
-        
+
+        const total = filteredJobs.length
         const paginatedJobs = filteredJobs.slice(offsetNumber, offsetNumber + limitNumber)
 
-        return paginatedJobs
+        return {data: paginatedJobs, total}
     }
 
     static async getById(id) {
