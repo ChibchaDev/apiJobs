@@ -3,8 +3,8 @@
 // ================================
 
 import express, { type Express, type Request, type Response } from "express"
-import { jobsRouter } from "./routes/jobs"
-import { corsMiddleware } from "./middlewares/cors"
+import { jobsRouter } from "./routes/jobs.js"
+import { corsMiddleware } from "./middlewares/cors.js"
 
 // ================================
 // CREAR APP

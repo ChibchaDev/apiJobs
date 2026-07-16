@@ -3,8 +3,8 @@
 // ================================
 
 import crypto from "node:crypto"
-import { db } from '../db/database.ts'
-import type { Job, CreateJobDTO, UpdateJobDTO, JobFilters } from "../types.ts"
+import { db } from '../db/database.js'
+import type { Job, CreateJobDTO, UpdateJobDTO, JobFilters } from "../types.js"
 
 // Base de datos en memoria (en producción sería una BD real)
 const jobs: Job[] = [

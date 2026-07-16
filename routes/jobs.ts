@@ -3,8 +3,8 @@
 // ================================
 
 import { Router } from "express"
-import { JobController } from "../controllers/job.ts"
-import { validateCreateJob, validateUpdateJob } from "../middlewares/validation.ts"
+import { JobController } from "../controllers/job.js"
+import { validateCreateJob, validateUpdateJob } from "../middlewares/validation.js"
 
 // ================================
 // CREAR ROUTER TIPADO

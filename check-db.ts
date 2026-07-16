@@ -1,4 +1,4 @@
-import { db } from "./db/database.ts"
+import { db } from "./db/database.js"
 
 const jobs = db.prepare(`
   SELECT * FROM jobs

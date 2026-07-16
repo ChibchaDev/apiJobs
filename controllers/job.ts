@@ -3,8 +3,8 @@
 // ================================
 
 import type { Request, Response } from "express"
-import { JobModel } from "../models/job.ts"
-import type { JobFilters } from "../types.ts"
+import { JobModel } from "../models/job.js"
+import type { JobFilters } from "../types.js"
 
 // ================================
 // TIPAR REQUEST Y RESPONSE

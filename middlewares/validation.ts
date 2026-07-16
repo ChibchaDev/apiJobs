@@ -3,7 +3,7 @@
 // ================================
 
 import type { Request, Response, NextFunction } from "express"
-import { validateJob, validatePartialJob } from "../schemas/job.ts"
+import { validateJob, validatePartialJob } from "../schemas/job.js"
 
 // ================================
 // TIPOS PARA MIDDLEWARES
